@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		72EDF34B2774E865001E6902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF34A2774E865001E6902 /* AppDelegate.swift */; };
 		72EDF34D2774E865001E6902 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF34C2774E865001E6902 /* SceneDelegate.swift */; };
-		72EDF34F2774E865001E6902 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF34E2774E865001E6902 /* ViewController.swift */; };
+		72EDF34F2774E865001E6902 /* JokeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF34E2774E865001E6902 /* JokeListViewController.swift */; };
 		72EDF3522774E865001E6902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72EDF3502774E865001E6902 /* Main.storyboard */; };
 		72EDF3542774E866001E6902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72EDF3532774E866001E6902 /* Assets.xcassets */; };
 		72EDF3572774E866001E6902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72EDF3552774E866001E6902 /* LaunchScreen.storyboard */; };
+		72EDF3622774EA17001E6902 /* JokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF3612774EA17001E6902 /* JokeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		72EDF3472774E865001E6902 /* ChuckNorris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72EDF34A2774E865001E6902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72EDF34C2774E865001E6902 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		72EDF34E2774E865001E6902 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72EDF34E2774E865001E6902 /* JokeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListViewController.swift; sourceTree = "<group>"; };
 		72EDF3512774E865001E6902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72EDF3532774E866001E6902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72EDF3562774E866001E6902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72EDF3582774E866001E6902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72EDF3612774EA17001E6902 /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		72EDF3492774E865001E6902 /* ChuckNorris */ = {
 			isa = PBXGroup;
 			children = (
+				72EDF35E2774E879001E6902 /* Scenes */,
 				72EDF34A2774E865001E6902 /* AppDelegate.swift */,
 				72EDF34C2774E865001E6902 /* SceneDelegate.swift */,
-				72EDF34E2774E865001E6902 /* ViewController.swift */,
 				72EDF3502774E865001E6902 /* Main.storyboard */,
 				72EDF3532774E866001E6902 /* Assets.xcassets */,
 				72EDF3552774E866001E6902 /* LaunchScreen.storyboard */,
 				72EDF3582774E866001E6902 /* Info.plist */,
 			);
 			path = ChuckNorris;
+			sourceTree = "<group>";
+		};
+		72EDF35E2774E879001E6902 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				72EDF3602774E886001E6902 /* Joke */,
+				72EDF35F2774E880001E6902 /* JokeList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		72EDF35F2774E880001E6902 /* JokeList */ = {
+			isa = PBXGroup;
+			children = (
+				72EDF34E2774E865001E6902 /* JokeListViewController.swift */,
+			);
+			path = JokeList;
+			sourceTree = "<group>";
+		};
+		72EDF3602774E886001E6902 /* Joke */ = {
+			isa = PBXGroup;
+			children = (
+				72EDF3612774EA17001E6902 /* JokeViewController.swift */,
+			);
+			path = Joke;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72EDF34F2774E865001E6902 /* ViewController.swift in Sources */,
+				72EDF34F2774E865001E6902 /* JokeListViewController.swift in Sources */,
 				72EDF34B2774E865001E6902 /* AppDelegate.swift in Sources */,
 				72EDF34D2774E865001E6902 /* SceneDelegate.swift in Sources */,
+				72EDF3622774EA17001E6902 /* JokeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
