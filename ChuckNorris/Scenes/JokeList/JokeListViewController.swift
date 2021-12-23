@@ -76,6 +76,8 @@ extension JokeListViewController: UITableViewDelegate {
             return
         }
         
+        viewController.category = categories[indexPath.row]
+        
         self.present(viewController, animated: true, completion: nil)
     }
     

@@ -117,7 +117,7 @@
                                             <constraint firstAttribute="width" constant="240" placeholder="YES" id="aC6-YX-lhK"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEf-JO-boe">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEf-JO-boe">
                                         <rect key="frame" x="0.0" y="136" width="240" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -129,10 +129,16 @@
                         <viewLayoutGuide key="safeArea" id="Eqs-iF-4sO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Eqs-iF-4sO" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tJH-GO-Yj6" secondAttribute="trailing" constant="16" id="Iqv-zZ-3jI"/>
                             <constraint firstItem="tJH-GO-Yj6" firstAttribute="centerX" secondItem="VaQ-38-3yK" secondAttribute="centerX" id="VMY-a7-ws9"/>
                             <constraint firstItem="tJH-GO-Yj6" firstAttribute="centerY" secondItem="VaQ-38-3yK" secondAttribute="centerY" id="bcV-01-926"/>
+                            <constraint firstItem="tJH-GO-Yj6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Eqs-iF-4sO" secondAttribute="leading" constant="16" id="hvf-LI-Oli"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Vij-DO-HGJ" id="JKc-Xq-hIi"/>
+                        <outlet property="jokeLabel" destination="VEf-JO-boe" id="gN1-Yu-BdQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t68-pK-8oX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

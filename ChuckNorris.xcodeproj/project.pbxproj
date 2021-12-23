@@ -16,6 +16,7 @@
 		72EDF3622774EA17001E6902 /* JokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF3612774EA17001E6902 /* JokeViewController.swift */; };
 		72EDF3652774EEF5001E6902 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 72EDF3642774EEF5001E6902 /* Alamofire */; };
 		72EDF3682774F0E0001E6902 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF3672774F0E0001E6902 /* CategoryCell.swift */; };
+		72EDF36B2774F31A001E6902 /* JokeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF36A2774F31A001E6902 /* JokeResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		72EDF3582774E866001E6902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72EDF3612774EA17001E6902 /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
 		72EDF3672774F0E0001E6902 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		72EDF36A2774F31A001E6902 /* JokeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		72EDF3492774E865001E6902 /* ChuckNorris */ = {
 			isa = PBXGroup;
 			children = (
+				72EDF3692774F310001E6902 /* Model */,
 				72EDF3662774F0D6001E6902 /* Views */,
 				72EDF35E2774E879001E6902 /* Scenes */,
 				72EDF34A2774E865001E6902 /* AppDelegate.swift */,
@@ -105,6 +108,14 @@
 				72EDF3672774F0E0001E6902 /* CategoryCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		72EDF3692774F310001E6902 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72EDF36A2774F31A001E6902 /* JokeResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 				72EDF34D2774E865001E6902 /* SceneDelegate.swift in Sources */,
 				72EDF3622774EA17001E6902 /* JokeViewController.swift in Sources */,
 				72EDF3682774F0E0001E6902 /* CategoryCell.swift in Sources */,
+				72EDF36B2774F31A001E6902 /* JokeResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
