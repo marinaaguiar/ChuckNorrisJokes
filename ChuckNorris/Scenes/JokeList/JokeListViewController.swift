@@ -21,6 +21,7 @@ class JokeListViewController: UIViewController {
         super.viewDidLoad()
         
         self.tableView.dataSource = self
+        self.tableView.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -62,6 +63,20 @@ extension JokeListViewController: UITableViewDataSource {
         cell.nameLabel.text = categories[indexPath.row]
         
         return cell
+    }
+    
+}
+
+extension JokeListViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        guard let viewController = storyboard?.instantiateViewController(withIdentifier: "joke") as? JokeViewController else {
+            return
+        }
+        
+        self.present(viewController, animated: true, completion: nil)
     }
     
 }

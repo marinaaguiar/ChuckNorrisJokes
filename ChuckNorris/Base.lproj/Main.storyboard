@@ -11,7 +11,7 @@
         <!--Categories-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Categories" id="BYZ-38-t0r" customClass="JokeListViewController" customModule="ChuckNorris" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="jokeList" title="Categories" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="JokeListViewController" customModule="ChuckNorris" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,7 +102,7 @@
         <!--Joke View Controller-->
         <scene sceneID="9eC-v0-byP">
             <objects>
-                <viewController id="fvI-bv-Vne" customClass="JokeViewController" customModule="ChuckNorris" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="joke" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fvI-bv-Vne" customClass="JokeViewController" customModule="ChuckNorris" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VaQ-38-3yK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
