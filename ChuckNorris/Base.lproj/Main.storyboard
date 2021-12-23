@@ -8,21 +8,61 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Joke List View Controller-->
+        <!--Categories-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="JokeListViewController" customModule="ChuckNorris" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Categories" id="BYZ-38-t0r" customClass="JokeListViewController" customModule="ChuckNorris" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="avX-iB-z97">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="categoryCell" id="8ia-YB-dmZ" customClass="CategoryCell" customModule="ChuckNorris" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8ia-YB-dmZ" id="SEb-Ap-eT9">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZIH-Ue-V08">
+                                                    <rect key="frame" x="16" y="6.5" width="32" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="32" id="CT8-26-ufE"/>
+                                                        <constraint firstAttribute="height" constant="32" id="u2O-0d-elh"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZ8-Ks-w34">
+                                                    <rect key="frame" x="56" y="12.5" width="342" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ZIH-Ue-V08" secondAttribute="bottom" constant="6" id="An7-dG-xe2"/>
+                                                <constraint firstItem="ZIH-Ue-V08" firstAttribute="top" relation="greaterThanOrEqual" secondItem="SEb-Ap-eT9" secondAttribute="top" constant="6" id="Mqb-rf-2ab"/>
+                                                <constraint firstItem="KZ8-Ks-w34" firstAttribute="centerY" secondItem="SEb-Ap-eT9" secondAttribute="centerY" id="Rxh-lI-CjD"/>
+                                                <constraint firstItem="ZIH-Ue-V08" firstAttribute="leading" secondItem="SEb-Ap-eT9" secondAttribute="leading" constant="16" id="W4E-ei-4KE"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="KZ8-Ks-w34" secondAttribute="bottom" constant="12" id="c9Z-dz-2Rn"/>
+                                                <constraint firstAttribute="trailing" secondItem="KZ8-Ks-w34" secondAttribute="trailing" constant="16" id="cG0-hM-Oo2"/>
+                                                <constraint firstItem="KZ8-Ks-w34" firstAttribute="top" relation="greaterThanOrEqual" secondItem="SEb-Ap-eT9" secondAttribute="top" constant="12" id="cZv-QK-0gY"/>
+                                                <constraint firstItem="ZIH-Ue-V08" firstAttribute="centerY" secondItem="SEb-Ap-eT9" secondAttribute="centerY" id="e6a-nW-xYX"/>
+                                                <constraint firstItem="KZ8-Ks-w34" firstAttribute="leading" secondItem="ZIH-Ue-V08" secondAttribute="trailing" constant="8" symbolic="YES" id="rlG-dl-BZS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="iconImageView" destination="ZIH-Ue-V08" id="gzh-iu-yeX"/>
+                                            <outlet property="nameLabel" destination="KZ8-Ks-w34" id="Gps-MH-ld5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.96470588235294119" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="avX-iB-z97" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P25-Ki-VLO"/>
                             <constraint firstItem="avX-iB-z97" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jGM-uE-8Qy"/>
@@ -30,7 +70,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="avX-iB-z97" secondAttribute="bottom" id="z0s-kj-I5F"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="AXm-LT-58f"/>
+                    <navigationItem key="navigationItem" title="Categories" id="AXm-LT-58f"/>
+                    <connections>
+                        <outlet property="tableView" destination="avX-iB-z97" id="PrQ-6r-bh3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,10 +83,12 @@
         <scene sceneID="baq-Uy-uft">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lta-9S-S04" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2gu-tF-ChG">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.82352941176470584" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
