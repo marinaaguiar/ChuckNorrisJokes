@@ -27,6 +27,10 @@ class JokeViewController: UIViewController {
         }
     }
     
+    // Problem: The business logic is mixed with the ViewController, which might cause organizational problems such as code duplication, inability to refactor easily, reusebility
+    // Proposed Solution: Move the function that fetch the data from API to a separate Type
+
+    
     func getJoke(from category: String, completion: @escaping (JokeResponse) -> Void) {
         let jokeEndpoint = "https://api.chucknorris.io/jokes/random?category=" + category
         

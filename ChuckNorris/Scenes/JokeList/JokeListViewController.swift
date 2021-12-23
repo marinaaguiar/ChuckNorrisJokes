@@ -12,6 +12,8 @@ class JokeListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    // Fill the dictionary with the icons and categories
+    
     var categories: [String] = []
     var categoryImages: [String: String] = [
         "animal": ""
@@ -32,6 +34,9 @@ class JokeListViewController: UIViewController {
             self.tableView.reloadData()
         })
     }
+    
+    // Problem: The business logic is mixed with the ViewController, which might cause organizational problems such as code duplication, inability to refactor easily, reusebility
+    // Proposed Solution: Move the function that fetch the data from API to a separate Type
     
     func getCategoryList(completion: @escaping ([String]) -> Void) {
         let categoriesEndpoint = "https://api.chucknorris.io/jokes/categories"

@@ -17,6 +17,7 @@
 		72EDF3652774EEF5001E6902 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 72EDF3642774EEF5001E6902 /* Alamofire */; };
 		72EDF3682774F0E0001E6902 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF3672774F0E0001E6902 /* CategoryCell.swift */; };
 		72EDF36B2774F31A001E6902 /* JokeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF36A2774F31A001E6902 /* JokeResponse.swift */; };
+		72EDF36E2774FEA2001E6902 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF36D2774FEA2001E6902 /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		72EDF3612774EA17001E6902 /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
 		72EDF3672774F0E0001E6902 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		72EDF36A2774F31A001E6902 /* JokeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeResponse.swift; sourceTree = "<group>"; };
+		72EDF36D2774FEA2001E6902 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		72EDF3492774E865001E6902 /* ChuckNorris */ = {
 			isa = PBXGroup;
 			children = (
+				72EDF36C2774FE90001E6902 /* Networking */,
 				72EDF3692774F310001E6902 /* Model */,
 				72EDF3662774F0D6001E6902 /* Views */,
 				72EDF35E2774E879001E6902 /* Scenes */,
@@ -116,6 +119,14 @@
 				72EDF36A2774F31A001E6902 /* JokeResponse.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		72EDF36C2774FE90001E6902 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				72EDF36D2774FEA2001E6902 /* APIService.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72EDF34F2774E865001E6902 /* JokeListViewController.swift in Sources */,
+				72EDF36E2774FEA2001E6902 /* APIService.swift in Sources */,
 				72EDF34B2774E865001E6902 /* AppDelegate.swift in Sources */,
 				72EDF34D2774E865001E6902 /* SceneDelegate.swift in Sources */,
 				72EDF3622774EA17001E6902 /* JokeViewController.swift in Sources */,
