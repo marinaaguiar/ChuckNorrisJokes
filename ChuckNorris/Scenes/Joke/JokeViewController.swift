@@ -2,11 +2,12 @@
 //  JokeViewController.swift
 //  ChuckNorris
 //
-//  Created by Bernardo Alecrim on 23/12/2021.
+//  Created by Marina Aguiar on 23/12/2021.
 //
 
 import UIKit
 import Alamofire
+import Kingfisher
 
 class JokeViewController: UIViewController {
 
@@ -37,10 +38,18 @@ class JokeViewController: UIViewController {
         APIService().fetchJoke(category: category) { [weak self] newJoke in
             guard let self = self else { return }
             
-            self.jokeResponse = newJoke
             self.jokeLabel.text = newJoke.value
+            
+            if let url = URL(string: newJoke.iconURL) {
+                self.imageView.kf.setImage(with: url)
+            } else {
+                print("error")
+            }
         }
     }
+    
+
+    
 
     
 //    func getJoke(from: category) {

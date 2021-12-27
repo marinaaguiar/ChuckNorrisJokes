@@ -2,7 +2,7 @@
 //  JokeListViewController.swift
 //  ChuckNorris
 //
-//  Created by Bernardo Alecrim on 23/12/2021.
+//  Created by Marina Aguiar on 23/12/2021.
 //
 
 import UIKit
@@ -42,7 +42,6 @@ class JokeListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         getCategories()
     }
     

@@ -18,9 +18,11 @@
 		72EDF3682774F0E0001E6902 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF3672774F0E0001E6902 /* CategoryCell.swift */; };
 		72EDF36B2774F31A001E6902 /* JokeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF36A2774F31A001E6902 /* JokeResponse.swift */; };
 		72EDF36E2774FEA2001E6902 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF36D2774FEA2001E6902 /* APIService.swift */; };
+		F375C387DF1910E3E4A1BDA3 /* Pods_ChuckNorris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56610617099596C839911E5 /* Pods_ChuckNorris.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31CE6A6869FA02D6CC7FDEB4 /* Pods-ChuckNorris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckNorris.debug.xcconfig"; path = "Target Support Files/Pods-ChuckNorris/Pods-ChuckNorris.debug.xcconfig"; sourceTree = "<group>"; };
 		72EDF3472774E865001E6902 /* ChuckNorris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72EDF34A2774E865001E6902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72EDF34C2774E865001E6902 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +35,8 @@
 		72EDF3672774F0E0001E6902 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		72EDF36A2774F31A001E6902 /* JokeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeResponse.swift; sourceTree = "<group>"; };
 		72EDF36D2774FEA2001E6902 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		C56610617099596C839911E5 /* Pods_ChuckNorris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChuckNorris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D153462E4EBD3F2A40D007ED /* Pods-ChuckNorris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckNorris.release.xcconfig"; path = "Target Support Files/Pods-ChuckNorris/Pods-ChuckNorris.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				72EDF3652774EEF5001E6902 /* Alamofire in Frameworks */,
+				F375C387DF1910E3E4A1BDA3 /* Pods_ChuckNorris.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56D472944C2363CDC4B2A642 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31CE6A6869FA02D6CC7FDEB4 /* Pods-ChuckNorris.debug.xcconfig */,
+				D153462E4EBD3F2A40D007ED /* Pods-ChuckNorris.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5B6414D56E867182E82C468C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C56610617099596C839911E5 /* Pods_ChuckNorris.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		72EDF33E2774E865001E6902 = {
 			isa = PBXGroup;
 			children = (
 				72EDF3492774E865001E6902 /* ChuckNorris */,
 				72EDF3482774E865001E6902 /* Products */,
+				56D472944C2363CDC4B2A642 /* Pods */,
+				5B6414D56E867182E82C468C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72EDF35B2774E866001E6902 /* Build configuration list for PBXNativeTarget "ChuckNorris" */;
 			buildPhases = (
+				6A2967BE5A82DF2CF8FE8CDD /* [CP] Check Pods Manifest.lock */,
 				72EDF3432774E865001E6902 /* Sources */,
 				72EDF3442774E865001E6902 /* Frameworks */,
 				72EDF3452774E865001E6902 /* Resources */,
+				116A426ECF67D693355C157A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,7 +204,7 @@
 			);
 			mainGroup = 72EDF33E2774E865001E6902;
 			packageReferences = (
-				72EDF3632774EEF4001E6902 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				72EDF3632774EEF4001E6902 /* XCRemoteSwiftPackageReference "Alamofire.git" */,
 			);
 			productRefGroup = 72EDF3482774E865001E6902 /* Products */;
 			projectDirPath = "";
@@ -200,6 +227,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		116A426ECF67D693355C157A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChuckNorris/Pods-ChuckNorris-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChuckNorris/Pods-ChuckNorris-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChuckNorris/Pods-ChuckNorris-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A2967BE5A82DF2CF8FE8CDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChuckNorris-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		72EDF3432774E865001E6902 /* Sources */ = {
@@ -356,6 +425,7 @@
 		};
 		72EDF35C2774E866001E6902 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31CE6A6869FA02D6CC7FDEB4 /* Pods-ChuckNorris.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -384,6 +454,7 @@
 		};
 		72EDF35D2774E866001E6902 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D153462E4EBD3F2A40D007ED /* Pods-ChuckNorris.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -434,7 +505,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		72EDF3632774EEF4001E6902 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		72EDF3632774EEF4001E6902 /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -447,7 +518,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		72EDF3642774EEF5001E6902 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 72EDF3632774EEF4001E6902 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 72EDF3632774EEF4001E6902 /* XCRemoteSwiftPackageReference "Alamofire.git" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
