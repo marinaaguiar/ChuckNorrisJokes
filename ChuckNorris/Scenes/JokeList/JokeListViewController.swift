@@ -29,23 +29,14 @@ class JokeListViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        getCategoryList(completion: { newCategories in
+        getCategories()
+    }
+    
+    func getCategories() {
+        APIService().fetchCategories(completion: { newCategories in
             self.categories = newCategories
             self.tableView.reloadData()
         })
-    }
-    
-    // Problem: The business logic is mixed with the ViewController, which might cause organizational problems such as code duplication, inability to refactor easily, reusebility
-    // Proposed Solution: Move the function that fetch the data from API to a separate Type
-    
-    func getCategoryList(completion: @escaping ([String]) -> Void) {
-        let categoriesEndpoint = "https://api.chucknorris.io/jokes/categories"
-        
-        AF.request(categoriesEndpoint).responseDecodable(of: [String].self) { categoriesResponse in
-            if let categories = categoriesResponse.value {
-                completion(categories)
-            }
-        }
     }
 
 }
