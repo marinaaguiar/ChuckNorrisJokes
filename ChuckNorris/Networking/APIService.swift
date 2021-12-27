@@ -11,11 +11,9 @@ import UIKit
 
 
 struct APIService {
-    
-    var category: String = ""
-        
+            
     let categoriesUrl = "https://api.chucknorris.io/jokes/categories"
-    let jokeUrl = "https://api.chucknorris.io/jokes/random?category=" + category
+    let jokePath = "https://api.chucknorris.io/jokes/random?category="
     
     func fetchCategories(completion: @escaping ([String]) -> Void) {
         AF.request(categoriesUrl).responseDecodable(of: [String].self) { categoriesResponse in
@@ -25,8 +23,8 @@ struct APIService {
         }
     }
     
-    func fetchJoke(completion: @escaping (JokeResponse) -> Void) {
-        AF.request(jokeUrl).responseDecodable(of: JokeResponse.self) { jokeResponse in
+    func fetchJoke(category: String, completion: @escaping (JokeResponse) -> Void) {
+        AF.request("\(jokePath)\(category)").responseDecodable(of: JokeResponse.self) { jokeResponse in
             if let joke = jokeResponse.value {
                 completion(joke)
             }

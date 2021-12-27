@@ -11,19 +11,33 @@ import Alamofire
 class JokeListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    
-    // Fill the dictionary with the icons and categories
-    
+        
     var categories: [String] = []
     var categoryImages: [String: String] = [
-        "animal": ""
+        "animal": "tortoise",
+        "career": "case",
+        "celebrity": "star",
+        "dev": "terminal",
+        "explicit": "exclamationmark.bubble",
+        "fashion": "bag",
+        "food": "applelogo",
+        "history": "book.closed",
+        "money": "dollarsign.circle",
+        "movie": "film",
+        "music": "music.note",
+        "political": "globe",
+        "religion": "burst",
+        "science": "lightbulb",
+        "sport": "sportscourt",
+        "travel": "airplane"
     ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.navigationBar.prefersLargeTitles = true
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,9 +69,11 @@ extension JokeListViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath) as? CategoryCell else {
             return UITableViewCell()
         }
-        
-        cell.nameLabel.text = categories[indexPath.row]
-        
+        let category = categories[indexPath.row] 
+        cell.imageView?.image = UIImage.init(systemName: categoryImages[category] ?? "")
+        cell.imageView?.tintColor = UIColor(red: 0.95, green: 0.80, blue: 0.56, alpha: 1.00)
+
+        cell.nameLabel.text = category
         return cell
     }
     

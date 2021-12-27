@@ -15,17 +15,38 @@ class JokeViewController: UIViewController {
     
     var category: String = ""
     
+    private var jokeResponse: JokeResponse?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        jokeLabel.text = ""
         
-        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        getJoke(from: category) { joke in
-            self.jokeLabel.text = joke.value
+        getJoke(category)
+    }
+   
+    func setup(_ category: String) {
+        self.category = category
+        getJoke(category)
+    }
+
+    func getJoke(_ category: String) {
+        APIService().fetchJoke(category: category) { [weak self] newJoke in
+            guard let self = self else { return }
+            
+            self.jokeResponse = newJoke
+            self.jokeLabel.text = newJoke.value
         }
     }
 
+    
+//    func getJoke(from: category) {
+//        APIService().fetchJoke(completion: { newJoke in
+//            self.jokeLabel.text = newJoke.value
+//        })
+//    }
 }
 
