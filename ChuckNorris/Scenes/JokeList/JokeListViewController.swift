@@ -46,9 +46,11 @@ class JokeListViewController: UIViewController {
     }
     
     func getCategories() {
-        APIService().fetchCategories(completion: { newCategories in
-            self.categories = newCategories
-            self.tableView.reloadData()
+        JokeAPI().fetchCategories(completion: { newCategories in
+            DispatchQueue.main.async {
+                self.categories = newCategories
+                self.tableView.reloadData()
+            }
         })
     }
 

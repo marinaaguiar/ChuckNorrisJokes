@@ -35,27 +35,18 @@ class JokeViewController: UIViewController {
     }
 
     func getJoke(_ category: String) {
-        APIService().fetchJoke(category: category) { [weak self] newJoke in
-            guard let self = self else { return }
-            
-            self.jokeLabel.text = newJoke.value
-            
-            if let url = URL(string: newJoke.iconURL) {
-                self.imageView.kf.setImage(with: url)
-            } else {
-                print("error")
+        JokeAPI().fetchJoke(category: category) { [weak self] newJoke in
+            DispatchQueue.main.async {
+                guard let self = self else { return }
+                
+                self.jokeLabel.text = newJoke.value
+                
+                if let url = URL(string: newJoke.iconURL) {
+                    self.imageView.kf.setImage(with: url)
+                } else {
+                    print("error")
+                }
             }
         }
     }
-    
-
-    
-
-    
-//    func getJoke(from: category) {
-//        APIService().fetchJoke(completion: { newJoke in
-//            self.jokeLabel.text = newJoke.value
-//        })
-//    }
 }
-
