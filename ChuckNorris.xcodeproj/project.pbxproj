@@ -9,15 +9,24 @@
 /* Begin PBXBuildFile section */
 		72EDF34B2774E865001E6902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF34A2774E865001E6902 /* AppDelegate.swift */; };
 		72EDF34D2774E865001E6902 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF34C2774E865001E6902 /* SceneDelegate.swift */; };
-		72EDF34F2774E865001E6902 /* JokeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF34E2774E865001E6902 /* JokeListViewController.swift */; };
+		72EDF34F2774E865001E6902 /* CategoriesListttViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF34E2774E865001E6902 /* CategoriesListttViewController.swift */; };
 		72EDF3522774E865001E6902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72EDF3502774E865001E6902 /* Main.storyboard */; };
 		72EDF3542774E866001E6902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72EDF3532774E866001E6902 /* Assets.xcassets */; };
 		72EDF3572774E866001E6902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72EDF3552774E866001E6902 /* LaunchScreen.storyboard */; };
 		72EDF3622774EA17001E6902 /* JokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF3612774EA17001E6902 /* JokeViewController.swift */; };
 		72EDF3652774EEF5001E6902 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 72EDF3642774EEF5001E6902 /* Alamofire */; };
-		72EDF3682774F0E0001E6902 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF3672774F0E0001E6902 /* CategoryCell.swift */; };
+		72EDF3682774F0E0001E6902 /* CategoryCellll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF3672774F0E0001E6902 /* CategoryCellll.swift */; };
 		72EDF36B2774F31A001E6902 /* JokeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF36A2774F31A001E6902 /* JokeResponse.swift */; };
 		72EDF36E2774FEA2001E6902 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF36D2774FEA2001E6902 /* APIService.swift */; };
+		9C3920AF277CD62900E3F2B2 /* CategoriesListViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3920AE277CD62900E3F2B2 /* CategoriesListViewModelProtocols.swift */; };
+		9C3920B1277CD6B700E3F2B2 /* CategoriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3920B0277CD6B700E3F2B2 /* CategoriesListViewModel.swift */; };
+		9C3920B62784A7AF00E3F2B2 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3920B52784A7AF00E3F2B2 /* UITableView+Extensions.swift */; };
+		9C3920BB2784AA3100E3F2B2 /* CategoriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3920B92784AA3100E3F2B2 /* CategoriesListViewController.swift */; };
+		9C3920BC2784AA3100E3F2B2 /* CategoriesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C3920BA2784AA3100E3F2B2 /* CategoriesListViewController.xib */; };
+		9C3920C02784AAC800E3F2B2 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3920BE2784AAC800E3F2B2 /* CategoryCell.swift */; };
+		9C3920C12784AAC800E3F2B2 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C3920BF2784AAC800E3F2B2 /* CategoryCell.xib */; };
+		9C3920C62784AC8200E3F2B2 /* JokeViewControllerr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3920C42784AC8200E3F2B2 /* JokeViewControllerr.swift */; };
+		9C3920C72784AC8200E3F2B2 /* JokeViewControllerr.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C3920C52784AC8200E3F2B2 /* JokeViewControllerr.xib */; };
 		F375C387DF1910E3E4A1BDA3 /* Pods_ChuckNorris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56610617099596C839911E5 /* Pods_ChuckNorris.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,15 +35,24 @@
 		72EDF3472774E865001E6902 /* ChuckNorris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72EDF34A2774E865001E6902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72EDF34C2774E865001E6902 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		72EDF34E2774E865001E6902 /* JokeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListViewController.swift; sourceTree = "<group>"; };
+		72EDF34E2774E865001E6902 /* CategoriesListttViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListttViewController.swift; sourceTree = "<group>"; };
 		72EDF3512774E865001E6902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72EDF3532774E866001E6902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72EDF3562774E866001E6902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72EDF3582774E866001E6902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72EDF3612774EA17001E6902 /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
-		72EDF3672774F0E0001E6902 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		72EDF3672774F0E0001E6902 /* CategoryCellll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellll.swift; sourceTree = "<group>"; };
 		72EDF36A2774F31A001E6902 /* JokeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeResponse.swift; sourceTree = "<group>"; };
 		72EDF36D2774FEA2001E6902 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		9C3920AE277CD62900E3F2B2 /* CategoriesListViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListViewModelProtocols.swift; sourceTree = "<group>"; };
+		9C3920B0277CD6B700E3F2B2 /* CategoriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListViewModel.swift; sourceTree = "<group>"; };
+		9C3920B52784A7AF00E3F2B2 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		9C3920B92784AA3100E3F2B2 /* CategoriesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListViewController.swift; sourceTree = "<group>"; };
+		9C3920BA2784AA3100E3F2B2 /* CategoriesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesListViewController.xib; sourceTree = "<group>"; };
+		9C3920BE2784AAC800E3F2B2 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		9C3920BF2784AAC800E3F2B2 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		9C3920C42784AC8200E3F2B2 /* JokeViewControllerr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewControllerr.swift; sourceTree = "<group>"; };
+		9C3920C52784AC8200E3F2B2 /* JokeViewControllerr.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JokeViewControllerr.xib; sourceTree = "<group>"; };
 		C56610617099596C839911E5 /* Pods_ChuckNorris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChuckNorris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D153462E4EBD3F2A40D007ED /* Pods-ChuckNorris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckNorris.release.xcconfig"; path = "Target Support Files/Pods-ChuckNorris/Pods-ChuckNorris.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,7 +76,6 @@
 				31CE6A6869FA02D6CC7FDEB4 /* Pods-ChuckNorris.debug.xcconfig */,
 				D153462E4EBD3F2A40D007ED /* Pods-ChuckNorris.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -91,6 +108,7 @@
 		72EDF3492774E865001E6902 /* ChuckNorris */ = {
 			isa = PBXGroup;
 			children = (
+				9C3920B42784A7A300E3F2B2 /* Common */,
 				72EDF36C2774FE90001E6902 /* Networking */,
 				72EDF3692774F310001E6902 /* Model */,
 				72EDF3662774F0D6001E6902 /* Views */,
@@ -108,8 +126,8 @@
 		72EDF35E2774E879001E6902 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				72EDF3602774E886001E6902 /* Joke */,
 				72EDF35F2774E880001E6902 /* JokeList */,
+				72EDF3602774E886001E6902 /* Joke */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -117,7 +135,8 @@
 		72EDF35F2774E880001E6902 /* JokeList */ = {
 			isa = PBXGroup;
 			children = (
-				72EDF34E2774E865001E6902 /* JokeListViewController.swift */,
+				9C3920B32784517C00E3F2B2 /* View */,
+				9C3920B22784517300E3F2B2 /* ViewModel */,
 			);
 			path = JokeList;
 			sourceTree = "<group>";
@@ -126,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				72EDF3612774EA17001E6902 /* JokeViewController.swift */,
+				9C3920C42784AC8200E3F2B2 /* JokeViewControllerr.swift */,
+				9C3920C52784AC8200E3F2B2 /* JokeViewControllerr.xib */,
 			);
 			path = Joke;
 			sourceTree = "<group>";
@@ -133,7 +154,6 @@
 		72EDF3662774F0D6001E6902 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				72EDF3672774F0E0001E6902 /* CategoryCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,6 +172,44 @@
 				72EDF36D2774FEA2001E6902 /* APIService.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		9C3920B22784517300E3F2B2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9C3920B0277CD6B700E3F2B2 /* CategoriesListViewModel.swift */,
+				9C3920AE277CD62900E3F2B2 /* CategoriesListViewModelProtocols.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9C3920B32784517C00E3F2B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C3920BD2784AAA000E3F2B2 /* Components */,
+				72EDF34E2774E865001E6902 /* CategoriesListttViewController.swift */,
+				9C3920B92784AA3100E3F2B2 /* CategoriesListViewController.swift */,
+				9C3920BA2784AA3100E3F2B2 /* CategoriesListViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9C3920B42784A7A300E3F2B2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9C3920B52784A7AF00E3F2B2 /* UITableView+Extensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9C3920BD2784AAA000E3F2B2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				72EDF3672774F0E0001E6902 /* CategoryCellll.swift */,
+				9C3920BE2784AAC800E3F2B2 /* CategoryCell.swift */,
+				9C3920BF2784AAC800E3F2B2 /* CategoryCell.xib */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +262,7 @@
 			);
 			mainGroup = 72EDF33E2774E865001E6902;
 			packageReferences = (
-				72EDF3632774EEF4001E6902 /* XCRemoteSwiftPackageReference "Alamofire.git" */,
+				72EDF3632774EEF4001E6902 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 72EDF3482774E865001E6902 /* Products */;
 			projectDirPath = "";
@@ -221,7 +279,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				72EDF3572774E866001E6902 /* LaunchScreen.storyboard in Resources */,
+				9C3920C12784AAC800E3F2B2 /* CategoryCell.xib in Resources */,
+				9C3920BC2784AA3100E3F2B2 /* CategoriesListViewController.xib in Resources */,
 				72EDF3542774E866001E6902 /* Assets.xcassets in Resources */,
+				9C3920C72784AC8200E3F2B2 /* JokeViewControllerr.xib in Resources */,
 				72EDF3522774E865001E6902 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,12 +336,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72EDF34F2774E865001E6902 /* JokeListViewController.swift in Sources */,
+				72EDF34F2774E865001E6902 /* CategoriesListttViewController.swift in Sources */,
+				9C3920B1277CD6B700E3F2B2 /* CategoriesListViewModel.swift in Sources */,
+				9C3920BB2784AA3100E3F2B2 /* CategoriesListViewController.swift in Sources */,
 				72EDF36E2774FEA2001E6902 /* APIService.swift in Sources */,
+				9C3920AF277CD62900E3F2B2 /* CategoriesListViewModelProtocols.swift in Sources */,
 				72EDF34B2774E865001E6902 /* AppDelegate.swift in Sources */,
+				9C3920C62784AC8200E3F2B2 /* JokeViewControllerr.swift in Sources */,
+				9C3920B62784A7AF00E3F2B2 /* UITableView+Extensions.swift in Sources */,
 				72EDF34D2774E865001E6902 /* SceneDelegate.swift in Sources */,
+				9C3920C02784AAC800E3F2B2 /* CategoryCell.swift in Sources */,
 				72EDF3622774EA17001E6902 /* JokeViewController.swift in Sources */,
-				72EDF3682774F0E0001E6902 /* CategoryCell.swift in Sources */,
+				72EDF3682774F0E0001E6902 /* CategoryCellll.swift in Sources */,
 				72EDF36B2774F31A001E6902 /* JokeResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,7 +572,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		72EDF3632774EEF4001E6902 /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
+		72EDF3632774EEF4001E6902 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -518,7 +585,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		72EDF3642774EEF5001E6902 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 72EDF3632774EEF4001E6902 /* XCRemoteSwiftPackageReference "Alamofire.git" */;
+			package = 72EDF3632774EEF4001E6902 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
