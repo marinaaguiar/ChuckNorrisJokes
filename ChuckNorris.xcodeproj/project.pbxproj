@@ -25,6 +25,7 @@
 		9C3920C72784AC8200E3F2B2 /* JokeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C3920C52784AC8200E3F2B2 /* JokeViewController.xib */; };
 		9C3920CB2784B0AD00E3F2B2 /* Pods_ChuckNorris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56610617099596C839911E5 /* Pods_ChuckNorris.framework */; };
 		9C3920CC2784B0AD00E3F2B2 /* Pods_ChuckNorris.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C56610617099596C839911E5 /* Pods_ChuckNorris.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C9B3C932785E68700E1AA75 /* JokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9B3C922785E68700E1AA75 /* JokeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +61,7 @@
 		9C3920BF2784AAC800E3F2B2 /* CategoryViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewCell.xib; sourceTree = "<group>"; };
 		9C3920C42784AC8200E3F2B2 /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
 		9C3920C52784AC8200E3F2B2 /* JokeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JokeViewController.xib; sourceTree = "<group>"; };
+		9C9B3C922785E68700E1AA75 /* JokeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewModel.swift; sourceTree = "<group>"; };
 		C56610617099596C839911E5 /* Pods_ChuckNorris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChuckNorris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D153462E4EBD3F2A40D007ED /* Pods-ChuckNorris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckNorris.release.xcconfig"; path = "Target Support Files/Pods-ChuckNorris/Pods-ChuckNorris.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,8 +119,6 @@
 			children = (
 				9C3920B42784A7A300E3F2B2 /* Common */,
 				72EDF36C2774FE90001E6902 /* Networking */,
-				72EDF3692774F310001E6902 /* Model */,
-				72EDF3662774F0D6001E6902 /* Views */,
 				72EDF35E2774E879001E6902 /* Scenes */,
 				72EDF34A2774E865001E6902 /* AppDelegate.swift */,
 				72EDF34C2774E865001E6902 /* SceneDelegate.swift */,
@@ -150,25 +150,11 @@
 		72EDF3602774E886001E6902 /* Joke */ = {
 			isa = PBXGroup;
 			children = (
-				9C3920C42784AC8200E3F2B2 /* JokeViewController.swift */,
-				9C3920C52784AC8200E3F2B2 /* JokeViewController.xib */,
+				9C9B3C8F2785E61B00E1AA75 /* Model */,
+				9C9B3C912785E65400E1AA75 /* View */,
+				9C9B3C902785E64700E1AA75 /* ViewModel */,
 			);
 			path = Joke;
-			sourceTree = "<group>";
-		};
-		72EDF3662774F0D6001E6902 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		72EDF3692774F310001E6902 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				72EDF36A2774F31A001E6902 /* JokeResponse.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		72EDF36C2774FE90001E6902 /* Networking */ = {
@@ -213,6 +199,31 @@
 				9C3920BF2784AAC800E3F2B2 /* CategoryViewCell.xib */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		9C9B3C8F2785E61B00E1AA75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72EDF36A2774F31A001E6902 /* JokeResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9C9B3C902785E64700E1AA75 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9C9B3C922785E68700E1AA75 /* JokeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9C9B3C912785E65400E1AA75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C3920C42784AC8200E3F2B2 /* JokeViewController.swift */,
+				9C3920C52784AC8200E3F2B2 /* JokeViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +356,7 @@
 				9C3920AF277CD62900E3F2B2 /* CategoriesListViewModelProtocols.swift in Sources */,
 				72EDF34B2774E865001E6902 /* AppDelegate.swift in Sources */,
 				9C3920C62784AC8200E3F2B2 /* JokeViewController.swift in Sources */,
+				9C9B3C932785E68700E1AA75 /* JokeViewModel.swift in Sources */,
 				9C3920B62784A7AF00E3F2B2 /* UITableView+Extensions.swift in Sources */,
 				72EDF34D2774E865001E6902 /* SceneDelegate.swift in Sources */,
 				9C3920C02784AAC800E3F2B2 /* CategoryViewCell.swift in Sources */,

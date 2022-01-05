@@ -30,13 +30,19 @@ extension CategoriesListViewController {
         viewModel.getCategories()
         tableView.register(CategoryViewCell.self)
         tableView.reloadData()
+        setupNavBar()
     }
+    
+    func setupNavBar() {
+        navigationItem.title = "Categories"
+    }
+
     
     func cell(_ tableView: UITableView, indexpath: IndexPath, categoryCell: CategoryCell) -> UITableViewCell {
         let cell = tableView.dequeCell(CategoryViewCell.self, indexpath)
         cell.fill(titleName: categoryCell)
-        cell.imageView?.image = viewModel.iconImage(category: categoryCell)
-        cell.imageView?.tintColor = UIColor(red: 0.95, green: 0.80, blue: 0.56, alpha: 1.00)
+        cell.iconImageView.image = viewModel.iconImage(category: categoryCell.title)
+        cell.iconImageView.tintColor = UIColor(red: 0.95, green: 0.80, blue: 0.56, alpha: 1.00)
         return cell
     }
 }

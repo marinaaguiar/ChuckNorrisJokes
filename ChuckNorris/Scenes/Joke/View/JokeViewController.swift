@@ -17,9 +17,12 @@ class JokeViewController: UIViewController {
     var category: String = ""
     
     private var jokeResponse: JokeResponse?
+
+    
+//    private var jokeResponse: JokeResponse?
     
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     
@@ -31,7 +34,7 @@ class JokeViewController: UIViewController {
         self.category = category
         getJoke(category)
     }
-
+    
     func getJoke(_ category: String) {
         JokeAPI().fetchJoke(category: category) { [weak self] newJoke in
             DispatchQueue.main.async {
@@ -47,5 +50,7 @@ class JokeViewController: UIViewController {
             }
         }
     }
+
+
 }
 
