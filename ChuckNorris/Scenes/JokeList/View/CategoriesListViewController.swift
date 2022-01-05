@@ -35,7 +35,7 @@ extension CategoriesListViewController {
     func cell(_ tableView: UITableView, indexpath: IndexPath, categoryCell: CategoryCell) -> UITableViewCell {
         let cell = tableView.dequeCell(CategoryViewCell.self, indexpath)
         cell.fill(titleName: categoryCell)
-        cell.imageView?.image = UIImage.init(systemName: categoryCell.title ?? "")
+        cell.imageView?.image = viewModel.iconImage(category: categoryCell)
         cell.imageView?.tintColor = UIColor(red: 0.95, green: 0.80, blue: 0.56, alpha: 1.00)
         return cell
     }
@@ -61,7 +61,6 @@ extension CategoriesListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
         viewModel.showJoke(category: viewModel.transporter(index: indexPath.row))
     }
 }
@@ -79,14 +78,11 @@ extension CategoriesListViewController: CategoriesViewModelDelegate {
     }
     
     func displayCategory(_ category: String) {
-        let jokeVc = JokeViewController()
-        jokeVc.setup(category)
-        guard (storyboard?.instantiateViewController(withIdentifier: "joke") as? JokeViewController) != nil else {
-            return
-        }
+        let jokeVC = JokeViewController()
+        jokeVC.setup(category)
+        navigationController?.pushViewController(jokeVC, animated: true)
         
 //        viewController.category = viewModel.categories[indexPath.row]
-        
 //        self.present(viewController, animated: true, completion: nil)
     }
 }

@@ -71,6 +71,14 @@ class CategoriesListViewModel: CategoriesListViewModelProtocol {
         return CategoryCell(title: categoryTitle)
     }
     
+    func iconImage(category: String) -> UIImage? {
+        guard let imageName = categoryImages[category],
+              let iconImage = UIImage(systemName: imageName) else {
+              return nil
+          }
+        return iconImage
+    }
+    
     func transporter(index: Int) -> String {
         categories[index]
     }

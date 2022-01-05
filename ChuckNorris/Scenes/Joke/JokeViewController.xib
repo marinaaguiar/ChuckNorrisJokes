@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JokeViewControllerr" customModule="ChuckNorris" customModuleProvider="target">
             <connections>
+                <outlet property="imageView" destination="Tzc-PQ-E3i" id="ksK-d3-94i"/>
+                <outlet property="jokeLabel" destination="xl2-UL-q9h" id="8YV-yM-h67"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -28,7 +30,7 @@
                                 <constraint firstAttribute="height" constant="128" id="mam-FQ-m7c"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xl2-UL-q9h">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xl2-UL-q9h">
                             <rect key="frame" x="0.0" y="136" width="240" height="20.5"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="240" id="zAe-jD-Qmz"/>

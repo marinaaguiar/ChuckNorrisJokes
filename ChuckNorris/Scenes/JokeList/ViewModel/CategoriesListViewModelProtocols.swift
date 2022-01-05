@@ -13,6 +13,7 @@ protocol CategoriesListViewModelProtocol: AnyObject {
     func numberOfSections() -> Int
     func numberOfRows() -> Int
     func categoryCell(_ index: Int) -> CategoryCell
+    func iconImage(category: String) -> String
     func transporter(index: Int) -> String
     func showJoke(category: String)
     

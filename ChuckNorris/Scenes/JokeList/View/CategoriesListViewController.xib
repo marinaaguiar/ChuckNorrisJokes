@@ -8,8 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoriesListtViewController" customModule="ChuckNorris" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoriesListViewController" customModule="ChuckNorris" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="kQt-Hv-I6S" id="V17-VJ-tM9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,7 +25,7 @@
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="0.94901961089999998" green="0.86274516580000005" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="kQt-Hv-I6S" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="SMN-Ef-39G"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kQt-Hv-I6S" secondAttribute="bottom" id="XQR-9E-h9s"/>
