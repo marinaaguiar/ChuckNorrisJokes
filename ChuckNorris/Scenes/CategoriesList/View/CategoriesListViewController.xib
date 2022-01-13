@@ -25,7 +25,7 @@
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="0.94901961089999998" green="0.86274516580000005" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.86274509803921573" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="kQt-Hv-I6S" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="SMN-Ef-39G"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kQt-Hv-I6S" secondAttribute="bottom" id="XQR-9E-h9s"/>

@@ -26,6 +26,7 @@
 		9C3920CB2784B0AD00E3F2B2 /* Pods_ChuckNorris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56610617099596C839911E5 /* Pods_ChuckNorris.framework */; };
 		9C3920CC2784B0AD00E3F2B2 /* Pods_ChuckNorris.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C56610617099596C839911E5 /* Pods_ChuckNorris.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9C9B3C932785E68700E1AA75 /* JokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9B3C922785E68700E1AA75 /* JokeViewModel.swift */; };
+		9C9B3C952785E7C100E1AA75 /* JokeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9B3C942785E7C100E1AA75 /* JokeViewModelProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +63,7 @@
 		9C3920C42784AC8200E3F2B2 /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
 		9C3920C52784AC8200E3F2B2 /* JokeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JokeViewController.xib; sourceTree = "<group>"; };
 		9C9B3C922785E68700E1AA75 /* JokeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewModel.swift; sourceTree = "<group>"; };
+		9C9B3C942785E7C100E1AA75 /* JokeViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewModelProtocol.swift; sourceTree = "<group>"; };
 		C56610617099596C839911E5 /* Pods_ChuckNorris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChuckNorris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D153462E4EBD3F2A40D007ED /* Pods-ChuckNorris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckNorris.release.xcconfig"; path = "Target Support Files/Pods-ChuckNorris/Pods-ChuckNorris.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,19 +134,19 @@
 		72EDF35E2774E879001E6902 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				72EDF35F2774E880001E6902 /* JokeList */,
+				72EDF35F2774E880001E6902 /* CategoriesList */,
 				72EDF3602774E886001E6902 /* Joke */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		72EDF35F2774E880001E6902 /* JokeList */ = {
+		72EDF35F2774E880001E6902 /* CategoriesList */ = {
 			isa = PBXGroup;
 			children = (
 				9C3920B32784517C00E3F2B2 /* View */,
 				9C3920B22784517300E3F2B2 /* ViewModel */,
 			);
-			path = JokeList;
+			path = CategoriesList;
 			sourceTree = "<group>";
 		};
 		72EDF3602774E886001E6902 /* Joke */ = {
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				9C9B3C922785E68700E1AA75 /* JokeViewModel.swift */,
+				9C9B3C942785E7C100E1AA75 /* JokeViewModelProtocol.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C3920B1277CD6B700E3F2B2 /* CategoriesListViewModel.swift in Sources */,
+				9C9B3C952785E7C100E1AA75 /* JokeViewModelProtocol.swift in Sources */,
 				9C3920BB2784AA3100E3F2B2 /* CategoriesListViewController.swift in Sources */,
 				72EDF36E2774FEA2001E6902 /* APIService.swift in Sources */,
 				9C3920AF277CD62900E3F2B2 /* CategoriesListViewModelProtocols.swift in Sources */,

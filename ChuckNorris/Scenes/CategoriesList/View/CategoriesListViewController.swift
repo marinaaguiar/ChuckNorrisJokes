@@ -43,6 +43,7 @@ extension CategoriesListViewController {
         cell.fill(titleName: categoryCell)
         cell.iconImageView.image = viewModel.iconImage(category: categoryCell.title)
         cell.iconImageView.tintColor = UIColor(red: 0.95, green: 0.80, blue: 0.56, alpha: 1.00)
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
 }
@@ -51,7 +52,6 @@ extension CategoriesListViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         viewModel.numberOfSections()
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -85,10 +85,7 @@ extension CategoriesListViewController: CategoriesViewModelDelegate {
     
     func displayCategory(_ category: String) {
         let jokeVC = JokeViewController()
-        jokeVC.setup(category)
+        jokeVC.setup(category: category)
         navigationController?.pushViewController(jokeVC, animated: true)
-        
-//        viewController.category = viewModel.categories[indexPath.row]
-//        self.present(viewController, animated: true, completion: nil)
-    }
+        }
 }

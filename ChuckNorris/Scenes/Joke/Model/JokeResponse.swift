@@ -8,17 +8,16 @@
 import Foundation
 
 struct JokeResponse: Codable {
-    let categories: [String]
-    let iconURL: String
-    let id: String
-    let url: String
-    let value: String
-    
+    let categories: [String]?
+    let iconURL: String?
+    let value: String?
+    let url: String?
+
+}
+
+private extension JokeResponse {
     enum CodingKeys: String, CodingKey {
         case iconURL = "icon_url"
-        case categories
-        case id
-        case url
-        case value
+        case value, url, categories
     }
 }

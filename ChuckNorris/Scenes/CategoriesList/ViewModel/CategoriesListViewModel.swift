@@ -38,14 +38,7 @@ class CategoriesListViewModel: CategoriesListViewModelProtocol {
         self.delegate = delegate
     }
     
-    func getCategories() {
-//        JokeAPI().fetchCategories(completion: { newCategories in
-//            DispatchQueue.main.async {
-//                self.categories = newCategories
-//                tableView.reloadData()
-//            }
-//        })
-        
+    func getCategories() {        
         JokeAPI().fetchCategories{ [weak self] newCategories in
             guard let self = self else {
                 self?.delegate?.didLoadWithError()
