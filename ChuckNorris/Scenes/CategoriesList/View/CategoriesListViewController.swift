@@ -35,6 +35,8 @@ extension CategoriesListViewController {
     
     func setupNavBar() {
         navigationItem.title = "Categories"
+        navigationController?.navigationBar.prefersLargeTitles = true
+
     }
 
     
