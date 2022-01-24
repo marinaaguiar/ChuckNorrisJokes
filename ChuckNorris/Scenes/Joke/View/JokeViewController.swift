@@ -17,9 +17,12 @@ class JokeViewController: UIViewController {
     
     private lazy var viewModel: JokeViewModelProtocol = JokeViewModel(delegate: self)
     
+    override func viewWillAppear(_ animated: Bool) {
+        setupView()
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
         jokeLabel.text = viewModel.joke.value
     }
     
@@ -27,11 +30,16 @@ class JokeViewController: UIViewController {
         viewModel.setup(category)
         navigationItem.title = category
     }
+
 }
 
 private extension JokeViewController {
     
     func setupView() {
+        hideComponents()
+    }
+    
+    func setupNavBar() {
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationController?.navigationBar.tintColor = UIColor(red: 0.95, green: 0.80, blue: 0.56, alpha: 1.00)
     }
@@ -39,6 +47,18 @@ private extension JokeViewController {
     func fill() {
         getIconJoke()
         jokeLabel.text = viewModel.joke.value
+    }
+    
+    func hideComponents() {
+        navigationController?.navigationBar.isHidden = true
+        imageView.isHidden = true
+        jokeLabel.isHidden = true
+    }
+    
+    func showComponents() {
+        navigationController?.navigationBar.isHidden = false
+        imageView.isHidden = false
+        jokeLabel.isHidden = false
     }
     
     func getIconJoke() {
@@ -61,6 +81,8 @@ extension JokeViewController: SearchViewDelegate {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
                     guard let self = self else { return }
                     self.fill()
+                    self.setupNavBar()
+                    self.showComponents()
                 }
             }
         }

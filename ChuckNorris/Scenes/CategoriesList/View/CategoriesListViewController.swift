@@ -14,6 +14,9 @@ class CategoriesListViewController: UIViewController {
     
     private lazy var viewModel: CategoriesListViewModelProtocol = CategoriesListViewModel(delegate: self)
     
+    override func viewWillAppear(_ animated: Bool) {
+        setup()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +28,12 @@ class CategoriesListViewController: UIViewController {
 extension CategoriesListViewController {
     
     func setup() {
+        setupNavBar()
         tableView.dataSource = self
         tableView.delegate = self
         viewModel.getCategories()
         tableView.register(CategoryViewCell.self)
         tableView.reloadData()
-        setupNavBar()
     }
     
     func setupNavBar() {
@@ -38,7 +41,6 @@ extension CategoriesListViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
 
     }
-
     
     func cell(_ tableView: UITableView, indexpath: IndexPath, categoryCell: CategoryCell) -> UITableViewCell {
         let cell = tableView.dequeCell(CategoryViewCell.self, indexpath)
