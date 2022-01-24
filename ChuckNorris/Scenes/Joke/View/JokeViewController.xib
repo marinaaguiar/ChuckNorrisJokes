@@ -58,7 +58,7 @@
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="heq-zB-l6y" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="K3i-Kc-wm6"/>
                 <constraint firstItem="heq-zB-l6y" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Yzu-ZX-IHP"/>

@@ -18,6 +18,7 @@ class JokeViewController: UIViewController {
     private lazy var viewModel: JokeViewModelProtocol = JokeViewModel(delegate: self)
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         setupView()
     }
         
@@ -40,8 +41,8 @@ private extension JokeViewController {
     }
     
     func setupNavBar() {
-        navigationController?.navigationBar.prefersLargeTitles = false
         navigationController?.navigationBar.tintColor = UIColor(red: 0.95, green: 0.80, blue: 0.56, alpha: 1.00)
+        navigationController?.navigationBar.prefersLargeTitles = false
     }
     
     func fill() {
